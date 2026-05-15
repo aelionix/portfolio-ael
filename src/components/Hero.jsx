@@ -24,8 +24,8 @@ export default function Hero() {
           <span className="mono-tag">/&gt;</span>
         </p>
         <h1 className="hero-name">
-          Ael<br />
-          <span className="name-accent">Julião</span>
+          Aeli<br />
+          <span className="name-accent">onix</span>
         </h1>
         <p className="hero-role">
           Desenvolvedor Full Stack em formação
