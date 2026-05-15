@@ -51,6 +51,7 @@ export default function About() {
           <pre className="card-code">{`{
   "nome": "Aelionix",
   "localização": "Bragança Paulista, SP",
+  "status": "200 OK, disponível para estágio",
   "email": "ipan24612@gmail.com",
   "github": "@aelionix",
   "formação": [
