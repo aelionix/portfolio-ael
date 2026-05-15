@@ -49,7 +49,7 @@ export default function Contact() {
         <p>
           Feito com React &amp; ☕ por{" "}
           <a href="https://github.com/aelionix" target="_blank" rel="noreferrer">
-            Lucas Julião
+            Aelionix
           </a>
         </p>
         <p className="footer-stack">React · Vite · Vercel</p>
