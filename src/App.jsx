@@ -12,24 +12,28 @@ import "./styles/global.css";
 
 export default function App() {
   const [introDone, setIntroDir] = useState(false);
+  const [starsDone, setStarsDir] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIntroDir(true), 3200);
+    const timer = setTimeout(() => {
+      setIntroDir(true);
+      setTimeout(() => setStarsDir(true), 4500)
+    }, 3200);
     return () => clearTimeout(timer);
   }, []);
 
   return (
-    <>
-      {!introDone && <Intro />}
-      <div className={`main-content ${introDone ? "visible" : "hidden"}`}>
-        <StarTransition />
-        <Navbar />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </div>
-    </>
-  );
+  <>
+    {!introDone && <Intro />}
+    {introDone && !starsDone && <StarTransition />}
+    <div className={`main-content ${starsDone ? "visible" : "hidden"}`}>
+      <Navbar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
+    </div>
+  </>
+);
 }

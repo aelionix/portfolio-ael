@@ -5,7 +5,7 @@ const lines = [
   { text: "> iniciando portfolio...", delay: 0 },
   { text: "> carregando stack: React, Python, Java, SQL", delay: 400 },
   { text: "> conectando ao github: @aelionix", delay: 900 },
-  { text: "> lucas.julião.azevedo — developer", delay: 1400 },
+  { text: "> ael.io.nix — developer", delay: 1400 },
   { text: "> sistema pronto.", delay: 1900 },
 ];
 
