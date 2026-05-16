@@ -8,11 +8,16 @@
     position: absolute;
     font-size: 2rem;
     color: #69667c
+    animation: starPath 2s ease-in-out forwards;
 }
 .s1, .s2, .s3, .s4 {
     top: 0;
     right:0;
 }
+.s1 { animation-delay: 0s; }
+.s2 { animation-delay: 0.3s; }
+.s3 { animation-delay: 0.6s; }
+.s4 { animation-delay: 0.9s; }
 @keyframes fstar {
     0% { top: 0; right: 0; bottom: auto; left: auto; }
     25% { top: auto; right: 0; bottom: 0; left: auto; }

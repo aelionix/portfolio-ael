@@ -6,7 +6,9 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import StarTransition from "./components/StarTransition";
 import "./styles/global.css";
+
 
 export default function App() {
   const [introDone, setIntroDir] = useState(false);
@@ -20,6 +22,7 @@ export default function App() {
     <>
       {!introDone && <Intro />}
       <div className={`main-content ${introDone ? "visible" : "hidden"}`}>
+        <StarTransition />
         <Navbar />
         <Hero />
         <About />
