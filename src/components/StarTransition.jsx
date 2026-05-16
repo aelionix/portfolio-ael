@@ -1,3 +1,4 @@
+import "./StarTransition.css"
 export default function StarTransition() {
     return(
         <div className='star-transition'>

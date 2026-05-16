@@ -1,0 +1,22 @@
+.star-transition {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 12;
+}
+.star {
+    position: absolute;
+    font-size: 2rem;
+    color: #69667c
+}
+.s1, .s2, .s3, .s4 {
+    top: 0;
+    right:0;
+}
+@keyframes fstar {
+    0% { top: 0; right: 0; bottom: auto; left: auto; }
+    25% { top: auto; right: 0; bottom: 0; left: auto; }
+    50% { top: auto; right: auto; bottom: 0; left: 0; }
+    75% { top: 50%; right: auto; bottom: auto; left: 0; }
+    100% { top: 50%; right: auto; bottom: auto; left: 50%; }
+}
